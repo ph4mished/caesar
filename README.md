@@ -52,3 +52,10 @@ Usage: caesar <FILE> [OPTIONS]
 
 
 ```
+
+**NOTE**: Caesar cipher is extremely weak, do notuse for anything that actually needs protection
+
+# TAKE AWAY
+I wrote this tool to
+- Learn Nim
+- Be a tool in my ctf toolbox
