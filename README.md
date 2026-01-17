@@ -7,7 +7,7 @@ nimble install caesar
 ```
 
 # Pattern Reference
-[pattern reference file](https://github.com/ph4mished/caesar/pattern.md)
+[pattern reference file](https://github.com/ph4mished/caesar/blob/main/pattern.md)
 
 
 # Usage
