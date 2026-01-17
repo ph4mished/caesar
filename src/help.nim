@@ -1,6 +1,6 @@
 import strutils, terminal, strformat
 
-let version = "0.1.0"
+let version = "0.2.0"
 let VERSION* = fmt " caesar v{version} \n Author: Jonathan B. Owusu (https://github.com/ph4mished/caesar)"
 
 
