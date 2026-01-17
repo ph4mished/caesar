@@ -116,11 +116,14 @@ when isMainModule:
         echo caesarDecode(line, key)
       quit(0)
 
-    
+    #For file
     if input.len > 0:
       try:
         if pattern != "":
-          echo caesarShift(input, pattern)
+          var file = open(input)
+          defer: file.close()
+          for line in file.lines:
+            echo caesarShift(line, pattern)
           quit(0)
         else:
           echo caesarDecode(input.readFile(), key)
@@ -140,10 +143,14 @@ when isMainModule:
         echo caesarEncode(line, key)
       quit(0)
     
+    #For file
     if input.len > 0:
       try:
         if pattern != "":
-          echo caesarShift(input, pattern)
+          var file = open(input)
+          defer: file.close()
+          for line in file.lines:
+            echo caesarShift(line, pattern)
           quit(0)
         else:
           echo caesarEncode(input.readFile(), key)
